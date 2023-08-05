@@ -48,22 +48,28 @@ router.post('/', (req, res) => {
 
 // update a tag's name by its `id` value
 router.put('/:id', (req, res) => {
-  Tag.update(req.body, {
-    where: {
-      id: req.params.id,
-    },
-  })
-    .then((updatedTag) => {
-      if (!updatedTag[0]) {
+  // Update a tag by its `id` value
+  Promise.all([
+    Tag.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    }),
+    Tag.findByPk(req.params.id),
+  ])
+    .then(([updatedRows, updatedTag]) => {
+      if (updatedRows[0] === 0 || !updatedTag) {
+        // Handle the case when no tag is updated or tag not found
         return res.status(404).json({ message: 'Tag not found' });
       }
-      res.json(updatedTag[1][0]);
+      res.json({ message: 'Tag updated successfully' });
     })
     .catch((err) => {
       console.error(err);
-      res.status(400).json(err);
+      res.status(500).json({ message: 'Server Error' });
     });
 });
+
 
 // delete a tag by its `id` value
 router.delete('/:id', (req, res) => {
