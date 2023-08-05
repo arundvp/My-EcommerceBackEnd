@@ -133,7 +133,7 @@ To use your E-commerce backend code with Sequelize and MySQL2, follow these step
    Run your E-commerce backend server using the following command:
 
    ```bash
-   node app.js
+   node server.js
    ```
 
 6. **Testing the Endpoints:**
