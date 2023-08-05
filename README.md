@@ -154,7 +154,8 @@ With these steps, you should be able to run and use your E-commerce backend succ
   https://opensource.org/licenses/MIT
   
   ## Deployed Link <a name="deployed-link"></a>
-  Walkthrough video demonstrating the functionality of the application : https://drive.google.com/file/d/15iyxKZ8P3CPJlFVJc1srx4ltApyNaEAr/view
+  Walkthrough video demonstrating the functionality of my code: https://drive.google.com/file/d/1GX0dpgLJB-ME-2GVbXp8Ohwh_l6YSF6U/view
+  Walkthrough video demonstrating the functionality tested in Insomnia Core: https://drive.google.com/file/d/15iyxKZ8P3CPJlFVJc1srx4ltApyNaEAr/view
   
   ## Sample Application <a name="sample-application"></a>
   

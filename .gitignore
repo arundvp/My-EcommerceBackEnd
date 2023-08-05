@@ -398,6 +398,6 @@ FodyWeavers.xsd
 *.sln.iml
 
 #My Ignore Stuff
-node_modules
-.env
 .vscode
+npm_modules
+.env
