@@ -396,3 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+#My Ignore Stuff
+node_modules
+.env
+.vscode
