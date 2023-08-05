@@ -3,6 +3,8 @@ const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
+const Category = require('./Category');
+
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
@@ -54,16 +56,5 @@ Product.init(
   }
 );
 
-// models/Product.js
-const Category = require('./Category');
-
-Product.belongsTo(Category, {
-  foreignKey: 'category_id',
-});
-
-Product.belongsToMany(Tag, {
-  through: ProductTag,
-  foreignKey: 'product_id',
-});
 
 module.exports = Product;
