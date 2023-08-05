@@ -90,10 +90,10 @@ To run your E-commerce backend code with Sequelize and MySQL2, follow these step
     Start your E-commerce backend server by running the following command:
 
     ```bash
-    node app.js
+    node server.js
     ```
 
-    Replace `app.js` with the filename where your Express application is defined.
+    Replace `server.js` with the filename where your Express application is defined.
 
 12. **Test the API Endpoints:**
     Your E-commerce backend should now be up and running. You can test the API endpoints using tools like Insomnia or Postman.
